@@ -1,0 +1,119 @@
+body{ height: 100vh;justify-content: center;}
+
+#header{	
+		background: white;
+		width: 60%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	  }
+#header #logo{margin: 0px 20px 0px 20px;	}
+
+#header #logo h1{
+					text-align: center;
+					font-family: forte;
+					    font-size: 40px;
+				}
+
+#header #nav{
+				background: black;
+				height: 50px;
+				border-radius: 50px;
+				margin: 0px 20px 0px 20px;
+			}
+#header #nav a{
+				text-decoration: none;
+				color: white;
+  			}
+
+#header #nav ul{text-align: center;}
+
+#header #nav li{
+				color: white;
+				list-style: none;
+				display: inline;
+				margin: 10px;
+				}
+
+#main {
+		display: flex;
+		flex-direction: row;
+		width: 55%;
+		height: 780px;
+		margin: auto;
+	}
+
+#main #profil{
+			width: 40%;
+			height: 300px;
+			margin: 10px;
+		}
+
+#main #profil ul{margin: -10px 0px 0px -20px;}
+
+/*#main #profil li{list-style: none;}*/
+
+#main #profil img {
+				width: 60%;filter: drop-shadow(2px 4px 6px black);
+}
+
+#main #D legend{
+				font-size: 20px;
+}
+
+#main #D fieldset{margin-top: 10px;}
+
+#main #D ol {list-style: none;    margin: 3px 0px 3px -10px;padding-left: 30px;}
+
+button{
+		background-color: black;
+		border-radius: 20px;
+		font-size: 18px;
+		margin: auto;
+		display: block;
+		width: 130px;
+	}
+button a{text-decoration: none;color: white;font-family: time new roman;}
+
+button:hover{cursor: pointer; background-color: #1E2506;}
+
+#footer{
+		background: black;
+		height: 155px;
+		width: 60%;
+	    margin: 20px 20px 0px 20px;
+	    display: flex;
+	    flex-direction: row;
+	    margin: auto;
+	    border-radius: 20px;
+	    color: white;
+	    align-items: center;
+		}
+#footer #logo{flex-direction: column;align-items: center;display: flex;}
+#footer #logo h1{
+					text-align: center;
+					font-family: forte;
+					color: white;
+					margin: 15px;
+				}
+#footer #logo img{
+					
+					width: 80px;
+				}
+
+#footer p{
+			margin: 20px;
+}
+@media all and (max-width: 1024px){
+									#D #D1{	margin: 10px 10px 0px 10px;	}
+
+									#D2 {
+											display: flex;
+											flex-direction: column;
+											align-items: center;
+										}
+									#D2 #D3 {width: 100%;}
+									#D2 #D4 {width: 100%;}
+									
+									}

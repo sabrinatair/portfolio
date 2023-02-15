@@ -1,0 +1,185 @@
+body::-webkit-scrollbar {width: 15px;}
+body::-webkit-scrollbar-thumb {
+								background-color: black;
+								border-radius: 20px;
+								border: 4px solid white;
+							  }
+body{
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  #ffffffc4;
+
+}
+
+header .logo {
+    width: 50px;
+    height: 80px;
+    position: relative;
+    left: 10px;
+}
+header nav{
+    position: relative;
+    right: 240px;
+}
+header nav a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: black;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.fond{
+    background: url(../img/graphicDesignDesk.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+    bottom: 130px;
+    z-index: -1;
+    filter: grayscale(1);
+}
+
+.titre{
+    position: relative;
+    top:  365px;
+}
+
+.titre h1{
+        text-align: center;
+        font-family: forte;
+        font-size: 50px;
+        }
+.titre h2{
+        text-align: center;
+        font-family: Time;
+        }
+.titre h3{
+        text-align: center;
+        font-family: Time;
+        
+        }
+.titre hr{
+            width: 260px;
+            background-color: white;
+            border: 1px solid black;
+            margin-top: -20px;
+        }
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    height: 675px;
+    margin: -100px 0px 0px 50px;
+    align-items: flex-start;
+    border: 1px solid;
+}
+
+.profil{
+    width: 32%;
+    height: 675px;
+    margin: 0px 15px 0px 0px;
+    border-right: 1px solid;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.profil ul{margin: -10px 0px 0px -20px;}
+
+.profil img {
+            width: 60%;
+            filter: drop-shadow(2px 4px 6px black);
+            border-radius: 100px;
+}
+
+.info{
+    margin-top: 15px;
+}
+
+.info ol {
+    list-style: none; 
+    margin: 3px 0px 3px -10px;
+    padding-left: 30px;
+}
+
+.profil button{
+    background-color: black;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 130px;
+    margin-top: 10px;
+}
+.profil button a{text-decoration: none;color: white;font-family: time new roman;}
+
+.profil button:hover{cursor: pointer; background-color: #1E2506;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 250px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+footer .logo {
+    width: 120px;
+    height: 200px;
+    position: relative;
+    left: 30px;
+}
+footer nav{
+    position: relative;
+    left: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer nav ul{
+    width: 400px;
+    font-size: xx-large;
+    color: black;
+}
+
+footer nav li{
+    list-style: none;
+}
+
+footer nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media all and (max-width: 1024px){
+    
+}

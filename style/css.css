@@ -76,9 +76,7 @@ header nav a{
             margin-top: -20px;
         }
 
-#portfolio{
-    display: flex;
-}
+
 
 .slider div p{color:#1c1c1c;position:absolute;bottom:-65px; font-family:font; font-size:22px;}
 

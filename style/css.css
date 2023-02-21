@@ -615,14 +615,12 @@ footer nav li a{
 @media all and (max-width: 1024px){
 
     header nav{
-        position: relative;
-        right: 60px;
-        flex-direction: row;
-        display: flex;
+        right: 0px;
     }
 
     header nav a{
         width: 100px;
+        font-size: large;
     }    
 
     .fond{

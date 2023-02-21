@@ -1,10 +1,10 @@
-body::-webkit-scrollbar {width: 15px;}
-body::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar {width: 15px;}
+ ::-webkit-scrollbar-thumb {
 								background-color: black;
 								border-radius: 20px;
 								border: 4px solid white;
 							  }
-body{
+ body{
     overflow-x: hidden;
 }
 header{
@@ -27,7 +27,7 @@ header .logo {
 }
 header nav{
     position: relative;
-    right: 240px;
+    right: 400px;
 }
 header nav a{
     text-decoration: none;
@@ -47,6 +47,7 @@ header nav a{
     bottom: 130px;
     z-index: -1;
     filter: grayscale(1);
+    border-bottom: 2px solid;
 }
 
 .titre{
@@ -75,21 +76,25 @@ header nav a{
             margin-top: -20px;
         }
 
+#portfolio{
+    display: flex;
+}
 
 .slider div p{color:#1c1c1c;position:absolute;bottom:-65px; font-family:font; font-size:22px;}
+
 .slider{
     
     height: 300px;
     width: 240px;
     padding: 40px;
     position: absolute;
-    top: 750px;
-    left: 100px;
+    top: 820px;
+    left: 150px;
     perspective: 1000px;
     transition: ease-in-out .2s;
 }
 
-.slid img { text-align:center;width:100%; height:100%; -webkit-user-drag:none;user-drag:none;-moz-user-drag:none; border-radius:2px; }
+.slid img { width:100%; height:100%; border-radius:2px; }
 
 
 .slid{
@@ -126,7 +131,7 @@ border-radius:5px;
     position: relative;
     height: 450px;
     bottom: 100px;
-    left: 740px;
+    left: 800px;
     perspective: 1400px;
     transform-style: preserve-3d;
   }
@@ -231,16 +236,31 @@ border-radius:5px;
 {
     transform: translate3d(-20%, 0, -99px);
 }
-  
+
+.CG{
+    width: 700px;
+    display: inline-table;
+    position: relative;
+    left: 800px;
+    top: 100px;
+}
 
 
+.CG img{
+    width: 46%;
+    margin: -30px 10px 0px 10px;
+    display: inline-block;
+}
 
-
+hr{
+    position: relative;
+    top: 600px;
+}
 .main {
     display: flex;
     flex-direction: row;
     height: 290px;
-    margin: 0px 100px 0px 100px;
+    margin: 600px 100px 0px 100px;
     
 }
 
@@ -357,7 +377,182 @@ border-radius:5px;
     font-size: 12px;
 }
 
-
+:root {
+    --perspective: 1800px;
+   --transition: transform 1s .2s, z-index 0s 0.5s;
+   }
+ 
+   .pages_page {
+   width: 50%;
+   position: absolute;
+   right: 0px;
+   height: 100%;
+   transform-origin: 0 50%;
+   }
+ 
+   * {
+   box-sizing: border-box;
+   }
+ 
+   .pages {
+   width: 700px;
+   height: 495px;
+   position: absolute;
+   left: 45px;
+   right: 0;
+   top: 220%;
+   transform: translateY(-50%);
+   perspective: var(--perspective);
+   box-shadow: 0 41px 38px -20px #0a3150;
+   }
+   .pages input {
+   display: none;
+   }
+   .pages_page {
+   pointer-events: none;
+   float: right;
+   transform-style: preserve-3d;
+   }
+   .pages_page:nth-of-type(1) {
+   z-index: 7;
+   transition: var(--transition);
+   }
+   .pages_page:nth-of-type(2) {
+   z-index: 6;
+   transition: var(--transition);
+   }
+   .pages_page:nth-of-type(3) {
+   z-index: 5;
+   transition: var(--transition);
+   }
+   .pages_page:nth-of-type(4) {
+   z-index: 4;
+   transition: var(--transition);
+   }
+ 
+   .pages_page:nth-of-type(1) {
+   left: 0;
+   z-index: 0;
+   transform: rotateY(0deg) !important;
+   pointer-events: none;
+   }
+   .pages_page:nth-of-type(1) .pages_page__inner {
+   transform: rotateY(0deg) !important;
+   }
+   .pages_page:nth-of-type(2) {
+   pointer-events: all;
+   }
+   .pages_page:nth-of-type(odd) .pages_page__inner {
+   transform: rotateY(180deg);
+   }
+   .pages_page:nth-of-type(1) .pages_page__inner {
+   background-size: 350px !important;
+   background-position: center !important;
+   background: url("../img/mag1.jpg");
+   }
+   .pages_page:nth-of-type(2) .pages_page__inner {
+   background-size: 350px !important;
+   background-position: center !important;
+   background: url("../img/mag2.jpg");
+   }
+   .pages_page:nth-of-type(3) .pages_page__inner {
+   background: url("../img/mag3.jpg");
+   background-position: 0 0;
+   }
+ 
+   .pages_page:nth-of-type(4) .pages_page__inner .bg {
+   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%);
+   height: 100%;
+   width: 200%;
+   position: relative;
+   background: url("../img/mag4.jpg");
+   background-size: 350px !important;
+   left: -100%;
+   }
+ 
+   .pages_page__inner {
+   background-size: 350px !important;
+   height: 100%;
+   transform-style: preserve-3d;
+   }
+   .pages_page__inner .control {
+   position: absolute;
+   z-index: 1;
+   width: 25px;
+   height: 25px;
+   border: 1px solid black;
+   border-radius: 100px;
+   top: 52%;
+   transform: translateY(-50%);
+   left: 5px;
+   cursor: pointer;
+   transition: all 0.23s;
+   }
+   .pages_page__inner .control:after {
+   content: "<";
+   display: block;
+   position: absolute;
+   left: 6px;
+   top: 50%;
+   transform: translateY(-50%);
+   transition: all 0.2s;
+   }
+ 
+   .pages_page__inner .control.next {
+   left: auto;
+   right: 5px;
+   }
+   .pages_page__inner .control.next:before {
+   left: auto;
+   right: -33px;
+   }
+   .pages_page__inner .control.next:after {
+   transform: rotate(180deg);
+   top: 3px;
+   left: 8px;
+   pointer-events: none;
+   }
+   .pages_page__inner .control label {
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   cursor: pointer;
+   }
+ 
+   .pages_page__inner .content {
+   transform-style: preserve-3d;
+   position: absolute;
+   z-index: 1;
+   pointer-events: none;
+   top: 0;
+   transform: translateZ(0px);
+   width: 100%;
+   height: 100%;
+   }
+ 
+ 
+   .pages input[type=radio]:nth-of-type(2):checked + input + input + div + div {
+   pointer-events: all;
+   transform: rotateY(-180deg);
+   z-index: 10;
+   transition: var(--transition);
+   }
+ 
+ 
+   .pages input[type=radio]:nth-of-type(2):checked + input + input + div + div + div {
+   pointer-events: all;
+   transform: rotateY(-180deg);
+   z-index: 10;
+   transition: var(--transition);
+   }
+ 
+   .pages input[type=radio]:nth-of-type(3):checked + input + div + div {
+   pointer-events: all;
+   transform: rotateY(-180deg);
+   z-index: 10;
+   transition: var(--transition);
+   }
 
 
 
@@ -407,8 +602,146 @@ footer nav li a{
     color: black;
 }
 
-
+#scroll_to_top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    border-radius: 25px;
+    right: 5px;
+}
+#scroll_to_top img {width: 50px;}
 
 @media all and (max-width: 1024px){
-    
+
+    header nav{
+        position: relative;
+        right: 60px;
+        flex-direction: row;
+        display: flex;
+    }
+
+    header nav a{
+        width: 100px;
+    }    
+
+    .fond{
+        height: 330px;
+    }
+
+    .titre{
+        top: 120px;
+    }
+
+    #portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider{
+        
+    top: 360px;
+    left: 80px;
+    }
+
+    #slide{
+        top: 310px;
+        left: 140px;
+    width: 760px;
+    height: 300px;
+    }
+
+    .pages{
+        width: 400px;
+        height: 283px;
+        top: 180%;
+    }
+
+    .pages_page:nth-of-type(1) .pages_page__inner {
+        background-size: 200px !important;
+    }
+
+    .pages_page:nth-of-type(2) .pages_page__inner {
+        background-size: 200px !important;
+    }
+
+    .pages_page__inner {
+        background-size: 200px !important;
+    }
+
+    .pages_page:nth-of-type(4) .pages_page__inner .bg {
+        background-size: 200px !important;
+    }
+
+    .pages_page__inner .control {
+        width: 10px;
+        height: 10px;
+    }
+
+    .pages_page__inner .control.next:after {
+        top: -3px;
+        left: 3px;
+        font-size: x-small;
+    }
+
+    .pages_page__inner .control:after {
+        left: 1px;
+        font-size: x-small;
+    }
+
+    .CG {
+        width: 600px;
+        display: flex;
+        position: relative;
+        left: 90px;
+        top: 700px;
+        flex-direction: column;
+    }
+
+    hr {
+        position: relative;
+        top: 700px;
+    }
+
+    .main{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        position: relative;
+        top: 100px;
+    }
+    .menu ul li {
+        
+        width: 70%;
+    }
+    .menu a:hover {
+        color: orange;
+        border-bottom: 2px solid gold;
+        width: 160px;
+    }
+
+    .site{
+        position: relative;
+        top: 80px;
+    }
+
+
+
+    footer {
+        flex-direction: column;
+        font-size: small;
+        height: 750px;
+        position: relative;
+        justify-content: center;
+    top: 90px;
+    }
+
+    footer .logo{
+        left: 0;
+        top: 10px;
+    }
+
+    footer nav{
+        flex-direction: column;
+    }
 }

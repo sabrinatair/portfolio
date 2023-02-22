@@ -637,42 +637,48 @@ footer nav li a{
         display: flex;
         flex-direction: column;
         align-items: center;
-}
+    }
     
+    .D1{
+        flex-direction: column;
+    }
+
+    .D2{
+        flex-direction: column;
+    }
 
     .slider{
-        
-    top: 360px;
-    left: 80px;
+        left: 70px;
     }
 
     #slide{
-        top: 310px;
-        left: 140px;
-    width: 760px;
-    height: 300px;
+        top: 330px;
+        left: 243px;
+        width: 650px;
+        height: 300px;
     }
 
     .pages{
-        width: 400px;
-        height: 283px;
-        top: 180%;
+        width: 350px;
+    height: 248px;
+    top: 55%;
+    left: 3%;
     }
 
     .pages_page:nth-of-type(1) .pages_page__inner {
-        background-size: 200px !important;
+        background-size: 175px !important;
     }
 
     .pages_page:nth-of-type(2) .pages_page__inner {
-        background-size: 200px !important;
+        background-size: 175px !important;
     }
 
     .pages_page__inner {
-        background-size: 200px !important;
+        background-size: 175px !important;
     }
 
     .pages_page:nth-of-type(4) .pages_page__inner .bg {
-        background-size: 200px !important;
+        background-size: 175px !important;
     }
 
     .pages_page__inner .control {
@@ -692,34 +698,40 @@ footer nav li a{
     }
 
     .CG {
-        width: 600px;
+        width: 425px;
         display: flex;
         position: relative;
-        left: 90px;
-        top: 700px;
+        left: 100px;
+        top: 350px;
         flex-direction: column;
     }
 
-    hr {
-        position: relative;
-        top: 700px;
-    }
+   
 
     .main{
         flex-direction: column;
         height: 100%;
         align-items: center;
         position: relative;
-        top: 100px;
+        top: 180px;
     }
+
+    .contact{
+        width: 60%;
+    }
+
+    .contact ul{
+        width: 193px;
+        padding-inline-start: 0px;}
+
+
     .menu ul li {
-        
-        width: 70%;
+        width: 100%;
     }
     .menu a:hover {
         color: orange;
         border-bottom: 2px solid gold;
-        width: 160px;
+
     }
 
     .site{
@@ -731,19 +743,29 @@ footer nav li a{
 
     footer {
         flex-direction: column;
-        font-size: small;
         height: 750px;
         position: relative;
         justify-content: center;
-    top: 90px;
+        top: 180px;
     }
 
     footer .logo{
-        left: 0;
-        top: 10px;
+        left: -5px;
+        width: 90px;
+        height: 160px;
     }
 
     footer nav{
         flex-direction: column;
+        scale: 0.8;
+        left: 50px;
+        bottom: 60px;
     }
+    footer nav ul{
+        width: 300px;
+        padding-inline-start: 0px;}
+
+        #scroll_to_top {
+            right: inherit;
+        }
 }

@@ -280,9 +280,7 @@ border-radius:5px;
    transform-origin: 0 50%;
    }
  
-   * {
-   box-sizing: border-box;
-   }
+   
  
    .pages {
    width: 700px;
@@ -616,6 +614,12 @@ footer nav li a{
 
 @media all and (max-width: 1024px){
 
+    body{
+        width: 100%;
+        position: absolute;
+    left: -7px;
+    }
+
     header nav{
         right: 0px;
     }
@@ -653,7 +657,7 @@ footer nav li a{
 
     #slide{
         top: 330px;
-        left: 243px;
+        left: 241px;
         width: 650px;
         height: 300px;
     }
@@ -662,7 +666,7 @@ footer nav li a{
         width: 350px;
     height: 248px;
     top: 55%;
-    left: 3%;
+    left: 5%;
     }
 
     .pages_page:nth-of-type(1) .pages_page__inner {
@@ -736,21 +740,22 @@ footer nav li a{
 
     .site{
         position: relative;
-        top: 80px;
+        top: 170px;
     }
 
 
 
     footer {
         flex-direction: column;
-        height: 750px;
+        height: 570px;
         position: relative;
-        justify-content: center;
         top: 180px;
+        display: flex;
     }
 
     footer .logo{
         left: -5px;
+        top: 5px;
         width: 90px;
         height: 160px;
     }

@@ -618,6 +618,7 @@ footer nav li a{
         width: 100%;
         position: absolute;
     left: -7px;
+    overflow-x: hidden;
     }
 
     header nav{

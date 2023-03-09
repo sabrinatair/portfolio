@@ -622,13 +622,37 @@ footer nav li a{
 }
 #scroll_to_top img {width: 50px;}
 
+@media all and (max-width: 700px) 
+{   
+    header{justify-content: space-around;}
+
+    header nav{
+        right: 0px;
+    }
+
+    header nav a{
+        width: 100px;
+        font-size: large;
+    }
+}
+
+
+
+@media all and (max-width: 400px){
+
+    .slide{
+            height: 205px;
+            width: 145%;
+            }
+}
+
 @media all and (max-width: 1024px){
 
     body{
         width: 100%;
         position: absolute;
-    left: -7px;
-    overflow-x: hidden;
+        left: -7px;
+        overflow-x: hidden;
     }
 
     
@@ -638,32 +662,28 @@ footer nav li a{
     }
 
     .titre{
-        top: 120px;
+        scale: 0.8;
+        justify-content: space-evenly;
     }
 
     #portfolio{
         display: flex;
         flex-direction: column;
+        height: 236vh;
         flex-wrap: nowrap;
+        justify-content: flex-start;
     }
     
-    .D1{
-        flex-direction: column;
-    }
-
-    .D2{
-        flex-direction: column;
-    }
-
+    
     .slider{
         left: 70px;
     }
 
     #slide{
         
-        left: 241px;
-        
+        margin-top: 40px;
         height: 260px;
+        width: 100%;
     }
 
     .pages{

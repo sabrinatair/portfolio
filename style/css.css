@@ -638,15 +638,24 @@ footer nav li a{
 
 
 
-@media all and (max-width: 400px){
+@media screen and (max-width: 400px){
 
-    .slide{
-            height: 205px;
-            width: 145%;
+    #slide{
+        height: 11% !important;
+        width: 160% !important;
+        left: 60% !important;
+        margin-top: 0 !important;
             }
+    #portfolio{
+        display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    }
 }
 
-@media all and (max-width: 1024px){
+@media screen and (max-width: 1024px){
 
     body{
         width: 100%;
@@ -671,7 +680,7 @@ footer nav li a{
         flex-direction: column;
         height: 236vh;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
     
     

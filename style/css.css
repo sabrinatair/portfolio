@@ -773,7 +773,7 @@ footer nav li a{
 
     footer {
         flex-direction: column;
-        height: 400px;
+        height: 530px;
         position: relative;
         display: flex;
     }

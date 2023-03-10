@@ -583,11 +583,14 @@ footer{
     align-items: center;
     justify-content: center;
     position: sticky;
+    background: white;
 }
 
 footer .logo {
-    scale: 0.9;
+    width: 90px;
+    height: 160px;
 }
+
 footer nav{
     position: relative;
     left: 80px;

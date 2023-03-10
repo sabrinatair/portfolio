@@ -7,16 +7,19 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "portfolio",
-  "start_url": "/",
+  "start_url": "https://monportfoliosabrinatair.netlify.app//",
   "theme_color": "#ffffff",
-  "categories": [],
+  "categories": [
+    "education"
+  ],
   "screenshots": [],
   "icons": [
     {
       "src": "./img/512.png",
       "type": "image/png",
-      "sizes": "138x269"
+      "sizes": "512x512"
     }
   ],
-  "shortcuts": []
+  "shortcuts": [],
+  "lang": "fr"
 }

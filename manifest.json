@@ -1,0 +1,22 @@
+{
+  "background_color": "#ffffff",
+  "description": "Sabrina's portfolio present all her design works",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "monportfolio",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "portfolio",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "./img/ST.png",
+      "type": "image/png",
+      "sizes": "138x269"
+    }
+  ],
+  "shortcuts": []
+}

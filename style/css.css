@@ -581,14 +581,12 @@ footer{
     border-bottom: 2px solid;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: sticky;
 }
 
 footer .logo {
     scale: 0.9;
-    position: relative;
-    left: 30px;
 }
 footer nav{
     position: relative;
@@ -598,7 +596,7 @@ footer nav{
     align-items: center;
 }
 footer nav ul{
-    width: 400px;
+    width: 320px;
     font-size: xx-large;
     color: black;
 }

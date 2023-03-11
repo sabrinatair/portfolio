@@ -12,7 +12,12 @@
   "categories": [
     "education"
   ],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "./img/Capture.png",
+      "type": "image/png"
+    }
+  ],
   "icons": [
     {
       "src": "./img/512.png",

@@ -1,3 +1,4 @@
+
 {
   "background_color": "#ffffff",
   "description": "Sabrina's portfolio present all her design works",
@@ -9,9 +10,7 @@
   "short_name": "portfolio",
   "start_url": "https://monportfoliosabrinatair.netlify.app//",
   "theme_color": "#ffffff",
-  "categories": [
-    "education"
-  ],
+  "categories": [ "education" ],
   "screenshots": [
     {
       "src": "./img/Capture.png",
